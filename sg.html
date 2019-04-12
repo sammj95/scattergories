@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="sg.css" type="text/css"/>
+        <script type = "text/javascript" src = "prototype.js"></script>
+        <script type="text/javascript" src="sg.js"></script>
+        
+        <title>Scattergories</title>
+        <meta charset="UTF-8">
+    </head>
+    
+    <body>
+        <div id="top_div">
+            <!-- letter die: A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, R, S, T, W -->
+            <button id="roll_btn" class="btn">Roll</button>
+            <span id="letter_die_0" class="my_span"></span>
+            <span id="letter_die_1" class="my_span" style="display:none">A</span>
+            <span id="letter_die_2" class="my_span" style="display:none">B</span>
+            <span id="letter_die_3" class="my_span" style="display:none">C</span>
+            <span id="letter_die_4" class="my_span" style="display:none">D</span>
+            <span id="letter_die_5" class="my_span" style="display:none">E</span>
+            <span id="letter_die_6" class="my_span" style="display:none">F</span>
+            <span id="letter_die_7" class="my_span" style="display:none">G</span>
+            <span id="letter_die_8" class="my_span" style="display:none">H</span>
+            <span id="letter_die_9" class="my_span" style="display:none">I</span>
+            <span id="letter_die_10" class="my_span" style="display:none">J</span>
+            <span id="letter_die_11" class="my_span" style="display:none">K</span>
+            <span id="letter_die_12" class="my_span" style="display:none">L</span>
+            <span id="letter_die_13" class="my_span" style="display:none">M</span>
+            <span id="letter_die_14" class="my_span" style="display:none">N</span>
+            <span id="letter_die_15" class="my_span" style="display:none">O</span>
+            <span id="letter_die_16" class="my_span" style="display:none">P</span>
+            <span id="letter_die_17" class="my_span" style="display:none">R</span>
+            <span id="letter_die_18" class="my_span" style="display:none">S</span>
+            <span id="letter_die_19" class="my_span" style="display:none">T</span>
+            <span id="letter_die_20" class="my_span" style="display:none">W</span>
+
+            <!-- timer: 3 minutes -->
+            <button id="timer_btn" class="btn">Start!</button>
+            <span id="timer"></span>
+        </div>
+
+        <!-- list: -->
+        <form action="mailto:sammj95@gmail.com?subject=Custom%20Categories&body=Please%20add%20this%20list%20to%20your%20website.%20Give%20credit%20to%20CREATERS_NAME_HERE.%0A" method="post" enctype="text/plain">
+        <div id="list">
+            <span id="random" class="list_links">RANDOM</span>
+            <span id="list_right" class="list_links">&lt;</span>
+            <span id="list_left" class="list_links">&gt;</span>
+            <span id="list_1" class="list_links">1</span>
+            <span id="list_2" class="list_links">2</span>
+            <span id="list_3" class="list_links">3</span>
+            <span id="list_4" class="list_links">4</span>
+            <span id="list_5" class="list_links">5</span>
+            <span id="list_6" class="list_links">6</span>
+            <span id="list_7" class="list_links">7</span>
+            <span id="list_8" class="list_links">8</span>
+            <span id="list_9" class="list_links">9</span>
+            <span id="list_10" class="list_links">10</span>
+            <span id="list_11" class="list_links">11</span>
+            <span id="list_12" class="list_links">12</span>
+            <span id="list_13" class="list_links">13</span>
+            <span id="list_14" class="list_links">14</span>
+            <span id="list_15" class="list_links">15</span>
+            <span id="list_16" class="list_links">16</span>
+            <br><br>
+            
+            <div id="list_img_div">
+                <img id="list_img" src="lists/list1.png" />
+
+                <div id="custom_list" style="display:none">
+                    <div id="custom_header">CUSTOM LIST</div>
+
+                    <div class="custom_list_cat">
+                        <span>1.  </span><input name="Category 1" placeholder="CATEGORY" />
+                        <hr class="custom_hr">
+                        <span>2.  <input name="Category 2" placeholder="CATEGORY" /></span>
+                        <hr class="custom_hr">
+                        <span>3.  <input name="Category 3" placeholder="CATEGORY" /></span>
+                        <hr class="custom_hr">
+                        <span>4.  <input name="Category 4" placeholder="CATEGORY" /></span>
+                        <hr class="custom_hr">
+                        <span>5.  <input name="Category 5" placeholder="CATEGORY" /></span>
+                        <hr class="custom_hr">
+                        <span>6.  <input name="Category 6" placeholder="CATEGORY" /></span>
+                        <hr class="custom_hr">
+                    </div>
+                    <div class="custom_list_cat">
+                        <span>7.  <input name="Category 7" placeholder="CATEGORY" /></span>
+                        <hr class="custom_hr">
+                        <span>8.  <input name="Category 8" placeholder="CATEGORY" /></span>
+                        <hr class="custom_hr">
+                        <span>9.  <input name="Category 9" placeholder="CATEGORY" /></span>
+                        <hr class="custom_hr">
+                        <span>10.  <input name="Category 10" placeholder="CATEGORY" /></span>
+                        <hr class="custom_hr">
+                        <span>11.  <input name="Category 11" placeholder="CATEGORY" /></span>
+                        <hr class="custom_hr">
+                        <span>12.  <input name="Category 12" placeholder="CATEGORY" /></span>
+                        <hr class="custom_hr">
+                    </div>
+                    <br>
+                </div>
+            </div>
+
+            <br>
+            <input id="custom_btn" class="btn-small" type="button" value="Create custom list" />
+            <input id="clear_custom" class="btn-small" type="reset" style="display:none" value="Reset" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input id="add_custom" class="btn-small" type="submit" title="Click to email your custom list to the site manager." style="display:none" value="Add list" />
+        </div></form>
+
+        <script>setUpOnclicks();</script>
+        <footer>
+            <br><br><br>
+            <hr style="border-color:rgb(1, 28, 51);">
+            <p style="font-size:.8em"><i>No affiliation to Hasbro Inc.&#8482; or The Game of Scattergories.</i></p>
+        </footer>
+    </body>
+</html>
